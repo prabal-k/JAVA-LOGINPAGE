@@ -3,13 +3,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.Scanner;
 
 public class Database_check  implements ActionListener{
     String userName[] = new String[3];
     String password[] = new String[3];
     boolean status;
+    Scanner obj =new Scanner(System.in);
 
-    int i = 0,flag=0;
+    int i = 0,flag;
     String t_username, t_password;
     JLabel username_label = new JLabel();
     JLabel pass_label = new JLabel();
@@ -17,10 +19,9 @@ public class Database_check  implements ActionListener{
     JTextField pass_textfield = new JTextField();
     JButton button = new JButton("continue");
     Frameclass frame;
-   // Database_check databaseCheck;
 
-    boolean getdata() throws ClassNotFoundException, SQLException  {
 
+    void getdata() throws ClassNotFoundException, SQLException, InterruptedException {
 
         frame = new Frameclass();
         frame.cretaeFrameclass();
@@ -37,6 +38,7 @@ public class Database_check  implements ActionListener{
         pass_label.setFont(new Font("Ink free", Font.BOLD, 25));
         pass_label.setText("password");
         frame.frame.add(pass_label);
+
 
         //for username textfield
         username_textfield.setBounds(420, 100, 160, 40);
@@ -78,14 +80,13 @@ public class Database_check  implements ActionListener{
 
         }
         button.addActionListener(this);
-        return status;
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
         int l = 1;
-        int count = 0;
+        //int count = 0;
        // int k=count+1;
         while (l<3)
         {
@@ -107,12 +108,15 @@ public class Database_check  implements ActionListener{
         else if(flag==0)
         {
             JOptionPane.showMessageDialog(null,"Incorrect");
-            status=false;
+           // status=false;
             username_textfield.setText("");
             pass_textfield.setText("");
             break;
         }
         }
+
+
+
 
     }
 }
