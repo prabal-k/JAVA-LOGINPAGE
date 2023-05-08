@@ -8,7 +8,8 @@ public class Main {
 
        Database_check db=new Database_check();
        db.getdata();
-       System.out.println(db.status);
+      // System.out.println(db.status);
+        System.out.println("hello");
        //Main_Menu menu=new Main_Menu();
       // menu.menu_frame();
         System.out.println("satish vai");
