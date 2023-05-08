@@ -11,8 +11,6 @@ public class Main {
        System.out.println(db.status);
        //Main_Menu menu=new Main_Menu();
       // menu.menu_frame();
-        jhsdfh
-                d
-        UserDefinedFileAttributeViewsf
+        System.out.println("swoem=ni vai");
     }
 }
