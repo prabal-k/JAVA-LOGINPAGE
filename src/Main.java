@@ -14,6 +14,6 @@ public class Main {
       // menu.menu_frame();
         System.out.println("swoem=ni vai");
         System.out.println("kuinkelg");
-        System.out.println(asda);
+        System.out.println("K XA RAMESH CHAPRI");
     }
 }
