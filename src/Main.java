@@ -19,5 +19,7 @@ public class Main {
 
         System.out.println("New line added in master branch");
 
+        System.out.println("test2 ma added");
+
     }
 }
