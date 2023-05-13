@@ -12,18 +12,8 @@ public class Main {
         System.out.println("hello");
        //Main_Menu menu=new Main_Menu();
       // menu.menu_frame();
-        System.out.println("swoem=ni vai");
-        System.out.println("kuinkelg");
-        System.out.println("K XA RAMESH CHAPRI");
-
-        System.out.println("New line added in master branch");
-
-        System.out.println("test2 ma added");
 
 
-        System.out.println("added this line in test branch");
-
-        System.out.println('hefsd');
 
     }
 }
